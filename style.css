@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: linear-gradient(120deg, yellow, orange);
+
+}
+
+header{
+    display: flex;
+    width: 90%;
+    height: 15vh;
+    margin: auto;
+    align-items: center;
+    /* background-color: lightblue; */
+}
+
+.main-title{
+    flex: 1;
+    font-size: 100px;
+    font-weight: 600;
+}
