@@ -60,3 +60,10 @@ nav {
 .heading p {
     color: red;
 }
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+}
