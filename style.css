@@ -9,6 +9,10 @@ body {
     /* background-image: linear-gradient(120deg, yellow, orange); */
 }
 
+button {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 header {
     display: flex;
     width: 90%;
@@ -65,18 +69,24 @@ nav {
     font-size: 22px;
 }
 
+.intro-text p {
+    margin: 10px 10px 0px 0px;
+    size: 100%;
+}
+
 .cta {
     padding: 20px 20px 0px 20px;
 }
 
 .cta-view {
-    background: rgb(193, 103, 245);
+    background: rgb(162, 43, 231);
     border: none;
     width: 140px;
     height: 30px;
     font-size: 18px;
     cursor: pointer;
     margin: 20px 0px 0px 20px;
+    color: white;
 }
 
 .cover {
@@ -88,7 +98,7 @@ nav {
 
 .cover img {
     height: 60vh;
-    filter: drop-shadow(5px 5px 10px black);
+    /* filter: drop-shadow( 5px 5px 10px black); */
     animation: drop 1s ease;
 }
 
