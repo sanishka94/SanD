@@ -44,3 +44,19 @@ nav {
     font-size: 18px;
     text-decoration: none;
 }
+
+.heading {
+    text-align: center;
+    width: 90%;
+    height: 50vh;
+    margin: auto;
+    padding-top: 150px;
+}
+
+.heading h1 {
+    font-size: 50px;
+}
+
+.heading p {
+    color: red;
+}

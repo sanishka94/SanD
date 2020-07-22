@@ -65,6 +65,7 @@ nav {
 }
 
 .intro-text {
+    flex: 1;
     margin-top: 20px;
     font-size: 22px;
 }
@@ -97,7 +98,7 @@ nav {
 }
 
 .cover img {
-    height: 60vh;
+    width: 100%;
     /* filter: drop-shadow( 5px 5px 10px black); */
     animation: drop 1s ease;
 }
