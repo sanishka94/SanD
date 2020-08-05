@@ -2,41 +2,58 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168981998-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-168981998-1');
+    </script>
+
+    <title>SanD</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>SanD</title>
+    <meta name="description" content="SanD website, designed to showcase SanD products" />
+    <meta name="keywords" content="SanD, minimal, simple" />
+    <!-- <meta name="robots" content="nofollow" /> -->
+    <meta http-equiv="author" content="Sanishka Jayasena" />
+    <!-- <meta http-equiv="pragma" content="no-cache" /> -->
+    <link rel="stylesheet" href="style/home_style.css">
 </head>
 
 <body>
-    <header>
-        <h1 class="main-title">
-            SanD
-        </h1>
-        <nav>
-            <ul class="nav-links">
-                <li><a class="nav-link" href="#">What's New</a></li>
-                <li><a class="nav-link" href="products.html">Products</a></li>
-                <li><a class="nav-link" href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="presentation">
-            <div class="intro-text">
-                <div class="intro-text">
-                    <h1>Money by SanD</h3>
-                        <p>Make budgeting simple, with this beautifully designed, simple app for tracking and understanding your everyday money flows. </p>
+    <div id="page">
+        <header>
+            <h1>SanD</h1>
+            <nav>
+                <ul>
+                    <li class="nav"><a href="#" class="current nav-link">Home</a></li>
+                    <li class="nav"><a href="products/index.html" class="nav-link">Products</a></li>
+                    <li class="nav"><a href="about/index.html" class="nav-link">About</a></li>
+                    <li class="nav"><a href="contact/index.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- <img src="/images/bck_o.jpg" alt="money coins" class="bck_img"> -->
+        <main>
+            <section id="cover">
+                <div id="cover_image" class="div_1">
+                    <img src="images/app_intro.png" alt="Money by SanD app Intro" />
                 </div>
-                <div class="cta">
-                    <button class="cta-view"><a href="./products/money_by_sand.html">View App</a></button>
+                <div id="cover_info" class="div_1">
+                    <h2 id="cover_info_header">Money by SanD</h2>
+                    <p id="cover_info_text">Make budgeting simple, with this beautifully designed app for
+                        tracking and understanding your everyday money flows.</p>
+                    <a href="/products/index.html"><Button class="button_1">Learn more</Button></a>
                 </div>
-            </div>
-            <div class="cover">
-                <img src="./img/App_intro.png" alt="App Home Page" />
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+        <footer>
+            <p>Created by: Sanishka Jayasena</p>
+            <p><a href="">Facebook</a> | <a href="">LinkedIn</a> | SanD 2020 v2.0.</p>
+        </footer>
 </body>
+</div>
 
 </html>
