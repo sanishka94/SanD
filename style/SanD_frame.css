@@ -71,6 +71,11 @@ main{
     flex-direction: column;
 }
 
+#notice{
+    background-color: rgb(214, 113, 30);
+    color: white;
+}
+
 body h1{
     font-size: 60px;
     font-weight: 900;
