@@ -13,7 +13,7 @@ button{
 
 #page{
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     background: rgb(92, 92, 92);
     background: linear-gradient(170deg, rgb(163, 163, 163) 0%, rgb(247, 236, 236) 100%);
     display: flex;
