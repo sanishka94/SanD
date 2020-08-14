@@ -24,7 +24,7 @@ button{
 header{
     width: 100%;
     background-color: rgb(51, 51, 51);
-    background-image: url(/images/header_img_tile.jpg);
+    background-image: url(../images/header_img_tile.jpg);
     padding: 10px 10px 10px 5px;
     display: flex;
     justify-content: space-between;
