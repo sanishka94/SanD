@@ -15,18 +15,25 @@ section{
 }
 
 .cover_image{
-    width: 60%;
+    width: 40%;
     min-width: 300px;
+    transition: 0.1s;
+}
+
+.cover_image:hover{
+    width: 40.5%;
+    transition: 0.1s;
 }
 
 .cover_text{
-    width: 40%;
+    width: 50%;
     padding: 20px;
     min-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    line-height: 2em;
 }
 
 .cover_text_header{
@@ -41,5 +48,22 @@ section{
     padding-top: 10px;
 }
 
+.button_body{
+    width: 165px;
+    height: 30px;
+    background-color: rgb(2, 2, 2);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
+.button_body:hover{
+    background-color: rgb(44, 44, 44);
+}
+
+.app_link:hover{
+    filter: contrast(70%);
+}
 

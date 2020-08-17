@@ -1,34 +1,42 @@
+html{
+    scroll-behavior: smooth;
+}
+
 *{
-    font-family: Helvetica, Arial, verdana, sans-serif;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
+body{
+    font-family: Helvetica, Arial, verdana, sans-serif;
+}
+
 button{
     font-family: Helvetica, Arial, verdana, sans-serif;
     border-style: none;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+}
+
+button:focus{
+    outline: none;
 }
 
 #page{
     min-height: 100vh;
     width: 100%;
-    background: rgb(92, 92, 92);
-    background: linear-gradient(170deg, rgb(163, 163, 163) 0%, rgb(247, 236, 236) 100%);
+    margin: 0 auto;
+    background: rgb(255,136,12);
+    background: linear-gradient(220deg, rgb(247, 165, 78) 0%, rgba(255,216,140,1) 90%);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 header{
-    width: 100%;
-    background-color: rgb(51, 51, 51);
-    background-image: url(../images/header_img_tile.jpg);
-    padding: 10px 10px 10px 5px;
+    padding: 50px 50px;
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content: center;
 }
 
 header h1{
@@ -36,97 +44,61 @@ header h1{
     font-weight: bold;
     color: white;
     cursor: default;
+    transition: 0.5s;
 }
 
-nav{
+header h1:hover{
+    font-size: 62px;
+    transition: 0.1s ease;
+}
+
+
+
+#sub_pages{
+    min-height: 50vh;
+    width: 100%;
+    padding: 20px 1%;
+    background-color: rgb(255, 255, 255);
+}
+
+#nav_btns{
     display: flex;
-    justify-content: space-evenly;
-    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-nav li{
-    display: inline-block;
-    margin: 0px 20px;
-}
-
-nav a{
+.nav_btn{
+    height: 70px;
+    width: 160px;
+    margin: 10px 10px;
+    border-radius: 0px;
+    background: rgb(221, 221, 221);
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    color: rgb(0, 0, 0);
     font-size: 16px;
-    text-decoration: none;
-    list-style: none;
-    color: white;
+    font-weight: bold;
 }
 
 .current{
-    color: rgb(250, 205, 120);
+    background: rgb(255,136,12);
+    background: linear-gradient(200deg, rgba(247, 151, 49, 0.9) 0%, rgba(255, 217, 140, 1) 90%);
 }
 
-.nav-link:hover{
-    color: rgb(250, 205, 120);
+#sub_page{
+    padding: 50px 0;
 }
-
-main{
-    width: 100%;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-#notice{
-    background-color: rgb(214, 113, 30);
-    color: white;
-}
-
-body h1{
-    font-size: 60px;
-    font-weight: 900;
-}
-
-body p{
-    font-size: 20px;
-    line-height: 30px;
-    padding: 5px;
-}
-
 
 footer{
     width: 100%;
-    height: 100px;
     background-color: rgb(51, 51, 51);
-    padding: 60px 5px 5px 5px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 40px 10px 10px 10px;
 }
 
-.footer_left{
-    display: flex;
-    align-self: flex-end;
-}
-
-.footer_right{
-    display: flex;
-    text-align: right;
-    align-self: flex-end;
-}
-
-footer p, a{
+footer p{
     color: white;
-    font-size: 14px;
-}
-
-.button_body{
-    background-color: rgb(51, 51, 51);
-    color: white;
-    font-weight: 600;
-    padding: 5px 30px;
     font-size: 16px;
-}
-
-.button_body:hover{
-    font-size: 16px;
-    color:  rgb(250, 205, 120);
-    cursor: pointer;
-}
-
-.button_body:active{
-    background-color:  rgb(94, 93, 93);
 }
