@@ -27,13 +27,15 @@ section{
 
 .cover_text{
     width: 50%;
-    padding: 20px;
+    padding: 0 20px;
     min-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     line-height: 2em;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 30px;
 }
 
 .cover_text_header{
@@ -43,6 +45,8 @@ section{
 .cover_text_info{
     text-align: left;
 }
+
+
 
 .app_link{
     padding-top: 10px;
