@@ -31,6 +31,11 @@ $(document).ready(function(){
             behavior: 'smooth',
         }, 50);
     });
+
+    $('#form1').on('submit', function(e) {
+        e.preventDefault();
+        console.log($('#fname').val() + ' ' + $('#lname').val());
+    });
 });
 
 function showProduct(){
