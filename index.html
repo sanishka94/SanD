@@ -14,11 +14,26 @@
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
         crossorigin="anonymous"></script>
     <!-- Bootstrap -->
+
+    <style>
+        #title{
+            animation: fadein 4s;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="user-select-none">
-        <div class="position-absolute top-50 start-50 translate-middle">
+        <div class="position-absolute top-50 start-50 translate-middle" id="title">
             <h1 class="display-1">Hello</h1>
         </div>
     </div>
