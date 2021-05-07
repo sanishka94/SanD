@@ -24,7 +24,13 @@
         #sub-title {
             opacity: 0;
             animation: fadeinout 4s linear;
-            animation-delay: 4.5s;
+            animation-delay: 4s;
+        }
+
+        #message {
+            visibility: visible;
+            opacity: 0;
+            animation: 9.5s ease 2s normal forwards 1 fadein;
         }
 
         @keyframes fadeinout {
@@ -40,11 +46,15 @@
         }
 
         @keyframes fadein {
-            from {
+            0% {
                 opacity: 0;
             }
 
-            to {
+            66% {
+                opacity: 0;
+            }
+
+            100% {
                 opacity: 1;
             }
         }
@@ -57,7 +67,11 @@
             <h1 class="display-1">Hello</h1>
         </div>
         <div class="position-absolute top-50 start-50 translate-middle" id="sub-title">
-            <h2 class="display-2">Welcome to SanD</h2>
+            <h2 class="display-2 text-center">Welcome to SanD</h2>
+        </div>
+        <div class="position-absolute top-50 start-50 translate-middle" id="message">
+            <p class="display-6 text-center">We are still under construction. We will be up and running soon. Thank you
+                for visiting us.</p>
         </div>
     </div>
 </body>
