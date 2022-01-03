@@ -1,0 +1,90 @@
+.ball {
+  background: #7fff7b;
+  box-shadow: 3px 2px 6px 0px rgba(0, 0, 0, 0.61);
+  -webkit-box-shadow: 3px 2px 6px 0px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 3px 2px 6px 0px rgba(0, 0, 0, 0.61);
+  border-radius: 22% 78% 11% 89% / 79% 21% 79% 21%;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 1s;
+  animation-name: slideup;
+  animation-duration: 2s;
+}
+
+.square {
+  background: white;
+  box-shadow: 3px 2px 6px 0px rgba(0, 0, 0, 0.61);
+  -webkit-box-shadow: 3px 2px 6px 0px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 3px 2px 6px 0px rgba(0, 0, 0, 0.61);
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin: 15px;
+  margin-top: 30px;
+  width: 400px;
+  min-height: 200px;
+  height: max-content;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.ball:hover,
+.square:hover {
+  background: rgb(255, 237, 237);
+  transition: 1s;
+}
+
+.ball:active,
+.square:active {
+  background: rgb(255, 255, 255);
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.square > .heading {
+  margin-bottom: 15px;
+}
+
+.details {
+  transition: 1s;
+}
+
+.detail {
+  font-size: 0.9rem;
+  margin: 10px 5px;
+  line-height: 1.3rem;
+}
+
+@media screen and (max-with: 700px) {
+  .square {
+    width: 300px;
+  }
+}
+
+@keyframes slideup {
+  0% {
+    margin-top: 50px;
+    opacity: 0;
+  }
+  30%{
+    opacity: 1;
+  }
+  100% {
+    margin-top: 10px;
+    opacity: 1;
+  }
+}

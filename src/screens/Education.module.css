@@ -1,0 +1,42 @@
+.content_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.edu {
+  background: white;
+  box-shadow: 3px 2px 6px 0px rgba(0, 0, 0, 0.61);
+  -webkit-box-shadow: 3px 2px 6px 0px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 3px 2px 6px 0px rgba(0, 0, 0, 0.61);
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin: 15px;
+  margin-top: 20px;
+  width: 400px;
+  min-height: 200px;
+  min-width: 250px;
+  height: max-content;
+  cursor: pointer;
+  transition: 1s;
+  flex: 1 0 40%;
+  animation-name: slideup;
+  animation-duration: 2s;
+}
+
+p{
+    margin: 10px;
+}
+
+
+@keyframes slideup {
+    0% {
+      margin-top: 50px;
+      opacity: 0;
+    }
+    100% {
+      margin-top: 20px;
+      opacity: 1;
+    }
+  }

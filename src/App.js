@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Layout from "./components/Layout";
+import Home from "./screens/Home";
+import Work from "./screens/Work";
+import Education from "./screens/Education";
+import Projects from "./screens/Projects";
+
+import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [curPage, setCurPage] = useState("home");
+
+  const pageHandler = (newPage) => {
+    setCurPage(newPage);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout pageHandler={pageHandler}>
+      {curPage === "home" && <Home pageHandler={pageHandler} />}
+      {curPage === "work" && <Work pageHandler={pageHandler} />}
+      {curPage === "education" && <Education pageHandler={pageHandler} />}
+      {curPage === "projects" && <Projects pageHandler={pageHandler} />}
+    </Layout>
   );
 }
 
